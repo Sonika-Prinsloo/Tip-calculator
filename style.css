@@ -1,0 +1,126 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, rgba(199, 200, 201, 0.829), white);
+}
+
+#section1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  font-weight: lighter;
+}
+
+#section2 {
+  margin: 0;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.411);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  color: rgba(0, 0, 0, 0.644);
+}
+article {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0px auto 50px;
+  color: white;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 0px auto 10px;
+}
+
+input[type="number"] {
+  margin: 10px;
+  border: 2px solid rgba(199, 200, 201, 0.829);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  height: 20px;
+  font-size: 20px;
+  width: 100px;
+  background-color: transparent;
+}
+
+p {
+  font-size: 20px;
+  margin: 0;
+}
+
+input[type="number"]:focus {
+  outline: none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgba(199, 200, 201, 0.829);
+  color: white;
+}
+
+select {
+  margin: 10px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: transparent;
+  border: 2px solid rgba(199, 200, 201, 0.829);
+  color: rgba(0, 0, 0, 0.644);
+}
+
+select:focus {
+  background-color: rgba(199, 200, 201, 0.829);
+  color: white;
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  margin: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-variant: small-caps;
+  background-color: transparent;
+  border: none;
+  background-color: rgb(255, 255, 107);
+  box-shadow:0 1px 2px 0 rgba(0,0,0,0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+  width: 200px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.644);
+}
+
+button:hover {
+  background-color: rgb(252, 252, 144);
+}
+
+@media all and (max-width:400px) {
+  h1 {
+    font-size: 13vw;
+    margin-bottom: 6vw;
+  }
+  #section2 {
+    padding: 4vw;
+  }
+  h2 {
+    font-size: 8vw;
+    margin-bottom: 2vw;
+  }
+  input[type="number"], select{
+    font-size: 6vw;
+    width: 40vw;
+    height: 8vw;
+  }
+  select {
+    font-size: 7vw;
+    width: 40vw;
+    height: 12vw;
+
+  }
+  p {
+    font-size: 7vw;
+  }
+  button {
+    width: 60vw;
+    font-size: 7vw;
+  }
+}

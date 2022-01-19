@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Tips, calculate">
+    <meta name="description" content="Calculate how much each guest will pay for the tip"> 
+
+    <title>Tip calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+
+    <section id="section1">
+      <h1>Tip Calculator</h1>
+      <section id="section2">
+        <form>
+          <article>
+            <h2>Bill Amount</h2>
+            <p>R<input type="number" id="Amount" maxlength="5"></p>
+          </article>
+
+          <article>
+            <h2>Number Of Guests</h2>
+            <input type="number" id="guests" maxlength="2">
+          </article>
+
+          <article>
+            <h2>Tip Amount</h2>
+            <select name="amount" id="tipAmount">
+              <option value=0>0%</option>
+              <option value=10>10%</option>
+              <option value=20>20%</option>
+              <option value=30>30%</option>
+              <option value=40>40%</option>
+              <option value=50>50%</option>
+              <option value=60>60%</option>
+              <option value=70>70%</option>
+              <option value=80>80%</option>
+              <option value=90>90%</option>
+              <option value=100>100%</option>
+            </select>
+          </article>
+
+          <button id="calculate" onclick="calculateTip()">calculate</button>
+        </form>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
